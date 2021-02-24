@@ -1,20 +1,17 @@
 import React from 'react';
 import './App.css';
-import { NotesTable } from './components/NotesTable';
 import { NavigationBar } from './components/Navbar';
+import { HeroSection } from './components/HeroSection';
 import NotesReducer from './redux/notesReducer';
-import { Navbar } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 
 const App = () => {
   return (
-    <div className="App">
-      <div>
+    <>
       <NavigationBar />
-      </div>
-      </div>
+      <HeroSection />
+    </>
   );
 }
 
 export default App;
-//<div style={{ maxWidth: '70%', margin: 'auto' }}>
-        //<NotesTable />
